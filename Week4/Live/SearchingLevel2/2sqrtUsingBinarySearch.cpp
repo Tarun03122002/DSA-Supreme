@@ -78,9 +78,6 @@ double precisionSqrt(int n){
         }
         step/=10;
     }
-   
-    
-
     return sqrt;
 }
 int main(){
