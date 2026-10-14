@@ -83,7 +83,7 @@ void sortZeroesAndOnesUsingTwoPointer(int arr[], int size)
 
     // }
 
-    while (left <= right)
+    while (left < right)
     {
         if (arr[left] == 0)
         {

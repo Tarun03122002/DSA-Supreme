@@ -116,7 +116,6 @@ void positioningMethod(int arr[],int n){
         }
     }
 
-
     for(int i=0;i<n;i++){
         if(arr[i]!=i+1){
             cout<<i+1<<" ";
@@ -129,8 +128,8 @@ int main(){
     int n = 5;
     // missingElmentFromDuplicateArray(arr,n);
 
-    // visitedMethod(arr,n);
-    positioningMethod(arr,n);
+    visitedMethod(arr,n);
+    // positioningMethod(arr,n);
 
     return 0;
 }

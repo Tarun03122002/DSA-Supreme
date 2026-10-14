@@ -52,7 +52,7 @@ void printDigits(int num){
 }
 
 //i/p total digits(3) digit 1 3 8
-// o/p number 831
+// o/p number 138
 int createNumberUsingDigits(int totalDigits){
    
     int answer=0;
@@ -133,7 +133,7 @@ int main(){
     // }else{
     //     cout<<"Even";
     // }
-    int x=3.2;
+    // int x=3.2;
 
-    cout<<"Set Bits of a number:"<<countSetBitsOfNumber(255);
+    // cout<<"Set Bits of a number:"<<countSetBitsOfNumber(255);
     }

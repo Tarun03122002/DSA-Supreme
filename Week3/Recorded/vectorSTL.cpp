@@ -81,7 +81,7 @@ int main(){
     // cin>>size;
     // int arr[size];  //dynamic array but user might need array which takes space larger than the space/memory given to a  program .Also in some compiler, it will not work
 
-    //DMA(Dynamic memory allocation) created at run time (but not a dynamic array)
+    // DMA(Dynamic memory allocation) created at run time (but not a dynamic array)
     // int *arr2 =new int [size];
 
 
@@ -111,26 +111,30 @@ int main(){
     // for(int i=0;i<arr1.size();i++){
     //     cout<<arr1[i]<<" ";
     // }
-
+    // cout<<endl;
     // vector<int> arr2(10,-1);//default with 0 data and size 10
     // for(int i=0;i<arr2.size();i++){
     //     cout<<arr2[i]<<" ";
     // }
+    // cout<<endl;
     // arr2.push_back(12);
     // arr2.push_back(13);
     // for(int i=0;i<arr2.size();i++){
     //     cout<<arr2[i]<<" ";
     // }
+    // cout<<endl;
 
-    vector<int> arr3 = {12,3,45,5};
-    arr3.push_back(12); //insert last index se hoga
+    // vector<int> arr3 = {12,3,45,5};
+    // arr3.push_back(12); //insert last index se hoga
+    // printVector(arr3);
+    // cout<<endl;
 
     // vector<int> arr4{12,3,45,5};
     // arr4.pop_back();//remove last index se hoga
     // printVector(arr4);
-    
+    // cout<<endl;
 
-    // // // how to copy vector
+    // // // // how to copy vector
     // vector<int> arr5(arr4);
     // printVector(arr5);
 
@@ -145,7 +149,7 @@ int main(){
     //  printVector(arr6);
    
 
-    //clear the vector
+    // // clear the vector
     // arr6.clear();//clear the array ==array ka size 0 ho jaayega
     // cout<<"\n"<<arr6.size()<<"\n";
     // cout<<arr6.empty()<<endl;// return 1 if array is empty else return 0
@@ -162,8 +166,8 @@ int main(){
     //accessing vector element 
     // using [] vectorName[index]
     // using at(index) vectorName.at(index)
-    cout<<arr3.at(2)<<endl;
-    cout<<arr3.at(4)<<endl;
+    // cout<<arr3.at(2)<<endl;
+    // cout<<arr3.at(4)<<endl;
     // cout<<arr3.at(5)<<endl; invalid index out of range error
 
 

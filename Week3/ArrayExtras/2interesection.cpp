@@ -7,56 +7,15 @@
 
 using namespace std;
 
-// function to print the Union fo two
-// arrays arr1 and arr2
-void printUnion(vector<int> nums1, vector<int> nums2, int m, int n){
-    // sort(arr1.begin(), arr1.end());
-    // sort(arr2.begin(), arr2.end());
-    // int i = 0;
-    // int j = 0;
-    // while(i < m && j < n){
-    //     if(arr1[i] < arr2[j]){
-    //         cout<<arr1[i]<<" ";
-    //         i++;
-    //     }
-    //     else if(arr2[j] < arr1[i]){
-    //         cout<<arr2[j]<<" ";
-    //         j++;
-    //     }
-    //     else{
-    //         cout<<arr2[j]<<" ";
-    //         i++;
-    //         j++;
-    //     }
-    // }
-     
-    // // printing remaining elemens fo the alrger array
-    // while(i < m){
-    //     cout<<arr1[i]<<" ";
-    //     i++;
-    // }
-    // while(j < n){
-    //     cout<<arr2[j]<<" ";
-    //     j++;
-    // }
+// Brute Force -> compare each of arr 1 with arr 2 if it equal then add in  array only if it does not exist in array
+// Tc -> O(n*m*n) Sc -> O(1)
 
-    //above logic not work for duplicate eleemnet in two arary
+// Better -> using hash set -> Tc -> O(n*m) Sc -> O(n)
 
-    // vector<int> ans;
-    unordered_map<int,int> mp;
-    for(int i=0;i<nums1.size();i++) mp.insert({nums1[i],i});
-    for(int j=0;j<nums2.size();j++) mp.insert({nums2[j],j});
+// Optimal -> sort and find common elements using 2 pointers 
+// TC -> O(nlogn+mlogm) sc-> O(1)
 
-    // for(auto itr = mp.begin();itr!=mp.end();itr++){
-    for(auto itr : mp){
-        // ans.push_back(itr->first);
-        cout<<itr.first<<" ";
-    }
-    // return ans;
-}
- 
-
-    // 
+// Optimal using map to store count of element if it 1 then push in ans 
 // function prints intersection of arr1 and arr2
 void printIntersection(vector<int> arr1, vector<int> arr2, int m, int n){
     // sort(arr1.begin(), arr1.end());
@@ -109,9 +68,9 @@ int main(){
     int m = arr1.size();
     int n = arr2.size();
      
-    // function call
-    cout<<"Union of two arrays is : ";
-    printUnion(arr1, arr2, m, n);
+    // // function call
+    // cout<<"Union of two arrays is : ";
+    // printUnion(arr1, arr2, m, n);
      
     cout<<endl<<"Intersection of two array is : ";
     printIntersection(arr1, arr2, m, n);
