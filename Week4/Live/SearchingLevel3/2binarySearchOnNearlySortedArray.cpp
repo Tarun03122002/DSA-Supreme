@@ -1,4 +1,5 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 
 //duplicate ke case mei yeh code first occurence dega
